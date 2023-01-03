@@ -68,11 +68,11 @@
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
             <td style="padding:20px;width:30%;vertical-align:middle">
 
-              <div class="one"><video width=260 height=260 muted autoplay loop>
-                  <source src='images/simple_lane.mp4' type="video/mp4">
+              <div class="one"><video width=200 height=200 muted autoplay loop>
+                  <source src='images/icra_2022.mp4' type="video/mp4">
                   </video>
-
               </div>
+              <br></br>
               <!-- <div class="one"><video width=260 height=260 muted autoplay loop>
                                 <source src='images/advanced_lane.mp4' type="video/mp4">
                                 </video>
@@ -100,7 +100,7 @@
               <em>Summer 2022</em>
               <br>
               <p>
-              In this project, our team participated in the 10th Autonomous Racing F1Tenth competition held at IEEE International Conference on Robotics and Automation 2022, and successfully secured the title as the second fastest lap time. Our autonomous racing car used the 25ms fast update from the Hokuyu 2D LIDAR and used an advanced spline based RRT* algorithm coupled with Pure Pursuit to plan a path around the opponent. Localization was done using Hector SLAM package and the particle filter was tuned to make the localization more accurate for head-to-head racing.
+              In this project, our team participated in the 10th Autonomous Racing F1Tenth competition held at IEEE International Conference on Robotics and Automation ( <a href="https://icra2022-race.f1tenth.org/">ICRA 2022</a> ), and successfully secured the title as the second fastest lap time. Our autonomous racing car used the 25ms fast update from the Hokuyu 2D LIDAR and used an advanced spline based RRT* algorithm coupled with Pure Pursuit to plan a path around the opponent. Localization was done using Hector SLAM package and the particle filter was tuned to make the localization more accurate for head-to-head racing.
               <br>
               </p>
             </td>
@@ -119,6 +119,7 @@
                               </video>
                             
             </div> -->
+            <br></br>
             <script type="text/javascript">
               function nerf_start() {
                 document.getElementById('nerf_image').style.opacity = "1";
@@ -138,7 +139,7 @@
             <br>
             <strong>Archit Hardikar, Lenning Davis, Nicholas Marion</strong>,
             <br>
-              <em>Summer 2022</em>
+              <em>Spring 2021</em>
             <br>
             <p>
               Demonstrated Point to Line Iterative Close Point scan match on occupancy grid map. 
@@ -154,14 +155,15 @@
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
             <td style="padding:20px;width:30%;vertical-align:middle">
   
-              <div class="one">
+              <!-- <div class="one">
                 <img src='images/meam520.png' width="200" height="200">
-              </div>
-              <!-- <div class="one"><video width=260 height=260 muted autoplay loop>
-                                <source src='images/advanced_lane.mp4' type="video/mp4">
-                                </video>
-                              
               </div> -->
+              <div class="one"><video width=200 height=200 muted autoplay loop>
+                                <!-- <source src='images/speed_test_map_1.mkv' type="video/mp4"> -->
+                                 <source src='images/arm_mpc1x1.mp4' type="video/mp4">
+                                </video>            
+              </div>
+              <br></br>
               <script type="text/javascript">
                 function nerf_start() {
                   document.getElementById('nerf_image').style.opacity = "1";
@@ -181,11 +183,17 @@
               <br>
               <strong>Archit Hardikar</strong>,
               <br>
-                <em>Summer 2022</em>
+                <em>Fall 2022</em>
               <br>
               <p>
+
                 <br>
-                Solved the pick and place task for static and dynamic blocks. Rotations and translation using Homogeneous transformations. Implemented A* and RRT algorithms for the 7-dof Franka Emika PANDA robotic manipulator arm in ROS using Python.
+                This project was threefold as mentioned below: <br>
+                For the first stage of the project, we solved the pick and place task for static and dynamic cubes. We created mechanical mounts for mounting usb_cam on the Robotic Arm, and developed a simulator to simulate Apriltag transformations to mimic the real world. The, by using Apriltags mounted on the cubes, we created ROS node to create transformations and iverse kinematics that would help the robot plan a path to pick up the cubes, and stack them to create a tower. Implemented A*, Rapidly Exploring Random Trees (RRT) and Potential Fields algorithms for the 7-dof Franka Emika PANDA robotic manipulator arm in ROS using Python.
+                <br>
+                For the second part, we implemented a 10 step finite horizon Model Predictive Control (MPC) with goal point as the waypoints given by the RRT algorithm.
+                <br>
+                For the third part, we implemented a Heirarchical MPC Algorithm, where RRT was used to generate multiple paths for the same initial start point and final goal, and then MPC was used to calculate the optimal path by checking the optimal cost for each path. Thus, MPC was used to improvise upon the random, unoptimized path generated by RRT.
                 <br>
               </p>
             </td>
@@ -204,6 +212,7 @@
                                 </video>
                               
               </div> -->
+              <br></br>
               <script type="text/javascript">
                 function nerf_start() {
                   document.getElementById('nerf_image').style.opacity = "1";
@@ -223,7 +232,7 @@
               <br>
               <strong>Archit Hardikar</strong>
               <br>
-                <em>Summer 2022</em>
+                <em>Fall 2022</em>
               <br>
               <p>
                 <br>

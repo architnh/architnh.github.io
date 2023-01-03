@@ -47,9 +47,11 @@
             </td>
           </tr>
         </tbody></table>
-        
 
         <br><br><br>
+
+
+
         <!-- Projects start here !-->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                     <tr>
@@ -61,89 +63,21 @@
         
         
         <table style="width:130%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-         <!-- Lane Detection -->
+          <!-- ICRA Race -->
 
-                   <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
-                     <td style="padding:20px;width:30%;vertical-align:middle">
-
-                       <div class="one"><video width=260 height=260 muted autoplay loop>
-                           <source src='images/simple_lane.mp4' type="video/mp4">
-                           </video>
-
-                       </div>
-                       <div class="one"><video width=260 height=260 muted autoplay loop>
-                                         <source src='images/advanced_lane.mp4' type="video/mp4">
-                                         </video>
-                                       
-                                     </div>
-                       <script type="text/javascript">
-                         function nerf_start() {
-                           document.getElementById('nerf_image').style.opacity = "1";
-                         }
-
-                         function nerf_stop() {
-                           document.getElementById('nerf_image').style.opacity = "0";
-                         }
-                         nerf_stop()
-                       </script>
-                     </td>
-                     
-                     
-                     
-                     
-                     
-                     
-                     <td style="padding:20px;width:75%;vertical-align:middle">
-                       <!--<a href="http://www.matthewtancik.com/nerf">-->
-                         <papertitle>Lane Lines Detection
-         </papertitle>
-                       </a>
-                       <br>
-                       <strong>Dingding Zheng</strong>,
-                       <br>
-                 <em>Summer 2021</em>
-                       <br>
-                       <p>
-                       In this project, lane detection pipelines are implemented and tested on a real-world dataset.
-                       <br>
-                       <br>
-                       For straight lines detection, images are converted to greyscale and Gaussian Blur method is applied to reduce noise. Then the blurred images are passed to cv2.Canny with max and min thresholds. After finding the edges and defining the interested region, cv2.HoughLinesP and cv2.addWeighted methods are used to draw the detected lines to images. However, several shortcomings still exist for this simple pipeline: 1. min and max values of Hough transform are predefined. This may harm the performance when we are trying to detect dashed lines. 2. the simple pipeline are not fit for "curve finding". Imagine when a lane is turning at an angle large enough to move the "lane end " from picture center, the detected lines may not align with reality.
-                       <br>
-                       <br>
-                       To deal with these problems, an advanced pipleline is proposed. I computed the camera calibration matrix and distortion coefficients given a set of chessboard images. Following this, we can get undistorted images by using correction. Color transforms, gradients are used to create threshold binary images. Then, we can detect lane pixels and fit them to find the lane boundary. Finally, a video showing the lane boundaries and numerical estimation of lane curvature is generated.
-                       <br>
-                    
-
-
-                       </p>
-                     </td>
-                   </tr>
-            
-            
-            
-            
-            
-            
-            
-
-          <!-- Quadrotor -->
-
-          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  <!--bgcolor="#ffffd0"-->
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
             <td style="padding:20px;width:30%;vertical-align:middle">
-<!--              <div class="one">-->
-<!--                  <img src='images/lab1_gif.gif' width="180" height="260">-->
-              <div class="one"><video width=260 height=290 muted autoplay loop>
-                  <source src='images/lab_1.mp4' type="video/mp4">
+
+              <div class="one"><video width=260 height=260 muted autoplay loop>
+                  <source src='images/simple_lane.mp4' type="video/mp4">
                   </video>
-                <!--<div class="two" id='nerf_image'><video  width=150% height=150% muted autoplay loop>
-                <source src="images/lab_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/lab_still.png' width="120">-->
-<!--                <video  width=150% height=150% muted autoplay loop>-->
-<!--                    <source src="images/lab_1.mp4" type="video/mp4">-->
-<!--                </video>-->
+
               </div>
+              <!-- <div class="one"><video width=260 height=260 muted autoplay loop>
+                                <source src='images/advanced_lane.mp4' type="video/mp4">
+                                </video>
+                              
+              </div> -->
               <script type="text/javascript">
                 function nerf_start() {
                   document.getElementById('nerf_image').style.opacity = "1";
@@ -155,729 +89,156 @@
                 nerf_stop()
               </script>
             </td>
+            
             <td style="padding:20px;width:75%;vertical-align:middle">
               <!--<a href="http://www.matthewtancik.com/nerf">-->
-                <papertitle>Quadrotor Planning and Control (UPenn MEAM 620 Advanced Robotics)
-</papertitle>
+                <papertitle>10th F1Tenth Autonomous Grand Prix (ICRA 2022, Philadelphia)</papertitle>
               </a>
               <br>
-              <strong>Dingding Zheng</strong>,
-              <a href="https://www.grasp.upenn.edu/people/shane-rozen-levy">Shane Rozen-Levy</a>,
-              <a href="https://www.grasp.upenn.edu/people/huaiyu-chen">Huaiyu Chen</a>
-<!--              <a href="http://matthewtancik.com/">Matthew Tancik*</a>,-->
-<!--              <strong>Jonathan T. Barron</strong>,-->
-<!--              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,-->
-<!--              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>-->
+              <strong>Archit Hardikar, Lenning Davis, Nicholas Marion, Ruchi Gupte</strong>,
               <br>
-        <em>Spring 2020</em>
+              <em>Summer 2022</em>
               <br>
-              <a href="data/MEAM620_proj1_1.pdf">project page</a>/
-
-              <a href="data/MEAM620_Project1_Team11_Report.pdf">report</a>/
-              
-<!--              <a href="https://github.com/zddkjmuner/Quadrotor-Control/blob/master/meam620-2020/proj1_1.pdf">project page</a>/-->
-<!--              <a href="https://github.com/zddkjmuner/Quadrotor-Control/blob/master/meam620-2020/MEAM620_Project1_Team11_Report.pdf">report</a>-->
-              <a href="https://youtu.be/W0gOJvOaMI8">video</a>
-        /
-              <a href="https://github.com/zddkjmuner/Quadrotor-Control">code</a>
-              <p></p>
               <p>
-                  In this project, we designed algorithms to control a
-quadrotor. Controlled by a geometric non-linear controller,
-the quadrotor could follow a predefined trajectory
-and reached the goal without collision. We got the optimal
-trajectory by applying Down-sampling algorithm to the shortest path which was
-generated by A*. This lab focused on demonstrating the
-planning aspect of robot capabilities. During the lab, the
-CrazyFlie 2.0 was used for realistic demonstrations. A
-microcomputer is responsible for low-level control and
-estimation, while the onboard IMU provides feedback
-of angular velocities and accelerations. The attitude
-and thrust commands are sent to the quadrotor via the
-CrazyRadio after being computed in python.
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-
-
-
-</p>
-            </td>
-          </tr> 
-
-          
-          <!-- F1 tenth -->
-
-          <tr onmouseout="porshadmanip_stop()" onmouseover="porshadmanip_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <!--<div class="two" id='porshadmanip_image'>
-                  <img src='images/porshadmanip_after.jpg' width="160"></div>-->
-                <img src='images/race.gif' width="220" height="220">
-<!--              </div>-->
-<!--              <script type="text/javascript">-->
-<!--                function porshadmanip_start() {-->
-<!--                  document.getElementById('porshadmanip_image').style.opacity = "1";-->
-<!--                }-->
-<!---->
-<!--                function porshadmanip_stop() {-->
-<!--                  document.getElementById('porshadmanip_image').style.opacity = "0";-->
-<!--                }-->
-<!--                porshadmanip_stop()-->
-<!--              </script>-->
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://f1tenth.org/">
-                <papertitle>F1tenth Racing (UPenn ESE 615 Autonomous Racing)</papertitle>
-              </a>
+              In this project, our team participated in the 10th Autonomous Racing F1Tenth competition held at IEEE International Conference on Robotics and Automation 2022, and successfully secured the title as the second fastest lap time. Our autonomous racing car used the 25ms fast update from the Hokuyu 2D LIDAR and used an advanced spline based RRT* algorithm coupled with Pure Pursuit to plan a path around the opponent. Localization was done using Hector SLAM package and the particle filter was tuned to make the localization more accurate for head-to-head racing.
               <br>
-              <a href="https://www.linkedin.com/in/shivangimisra1/">Shivangi Misra</a>,
-              <strong>Dingding Zheng</strong>,
-              <a href="https://weiyi-tang.netlify.app/">Weiyi Tang</a>
-<!--              <a href="https://www.linkedin.com/in/rohit-pandey-bab10b7a/">Rohit Pandey</a>,-->
-<!--              <a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,-->
-<!--              <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,-->
-<!--              <a href="http://graphics.stanford.edu/~dejacobs/">David E. Jacobs</a>-->
-              <br>
-              <em>Spring</em> 2020
-              <br>
-              <a href="https://f1tenth.org/">project page</a> /
-              
-              <a href="data/ESE_615_Final_Report_by_Team_1.pdf">report</a>/
-<!---->
-<!--              <a href="https://github.com/zddkjmuner/Autonomous-Racing/blob/master/f1tenth_team1_project/ESE_615_Final_Report_by_Team_1.pdf">report</a> /-->
-              <a href="https://github.com/zddkjmuner/Autonomous-Racing">code</a>
-              <p></p>
-              <p><a href="https://f1tenth.org/build.html">”F1tenth”</a> is an open-source, small-scale racing car platform
-widely used for teaching and research in safe autonomy.
-Maneuvering a racing car to finish loops in minimum time
-has been studied for decades. However, it’s always computationally
-expensive and infeasible to solve this problem by
-real-time trajectory planning. In this project, we generated
-a velocity profile to find the maximum permissible speed of
-racing car on each waypoint on the path. Then, we use CMAES
-(Covariance Matrix Adaptation - Evolution Strategy) to
-generate the desired path for vehicle to track. The generated
-path has a relatively small curvature which allows the racing
-car to run at high, steady speed. Pure pursuit is used as
-the vehicle controller. To avoid obstacles, we implemented
-ODG-PFM (Obstacle-Dependent Gaussian Potential
-Field) and compared its performance VS. RRT*. In order to
-measure the performance of these two algorithms, we setup
-several testing maps and added noise to the environment.</p>
-            </td>
-          </tr>  
-
-          
-           <!-- SMOREs !-->
-                  
-                  <tr onmouseout="learnaf_stop()" onmouseover="learnaf_start()">
-                                        <td style="padding:20px;width:25%;vertical-align:middle">
-                                          <div class="one">
-                            <!--                <div class="two" id='learnaf_image'>-->
-                            <!--                  <img src='images/learnaf_after.jpg' width="160"></div>-->
-                                            <img src='images/smores.JPG' width="230" height="210">
-                                          </div>
-                                          <script type="text/javascript">
-                                            function learnaf_start() {
-                                              document.getElementById('learnaf_image').style.opacity = "1";
-                                            }
-
-                                            function learnaf_stop() {
-                                              document.getElementById('learnaf_image').style.opacity = "0";
-                                            }
-                                            learnaf_stop()
-                                          </script>
-                                        </td>
-                                        <td style="padding:20px;width:75%;vertical-align:middle">
-                            <!--              <a href="https://arxiv.org/abs/2004.12260">-->
-                                            <papertitle>Self-Assembling MOdular Robot for Extreme Shapeshifting
-                                                <br>(UPenn ModLab Research)</papertitle>
-                                          </a>
-                                          <br>
-                            <!--              <a href="">Charles Herrmann</a>,-->
-                            <!--              <a href="">Richard Strong Bowen</a>,-->
-                            <!--              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,-->
-                            <!--              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,-->
-                            <!--              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,-->
-                            <a href="https://www.seas.upenn.edu/~chaoliu/">Chao Liu</a>,
-                            <a href="https://www.seas.upenn.edu/directory/profile.php?ID=107">Mark Yim</a>,
-                            Qian Lin,
-                            Hyun Kim,
-                            Zhaoxi Chen,
-                            Chang Liu,
-                            
-                                          <strong>Dingding Zheng</strong>
-          <!--                                <a href="https://obastani.github.io/">Osbert Bastani</a>-->
-                                          <br>
-                                          <em>Summer</em> 2019, 2020
-                                          <br>
-                  <!--                        <a href="data/maskrcnn_partb.pdf">project page</a>/-->
-
-                                          <a href="https://www.modlabupenn.org/2016/06/18/smores-ep/">project page</a>
-                                          <p></p>
-                                          <p>SMORES-EP is a modular robot designed and built by the University of Pennsylvania, and used by researchers at UPenn and Cornell. Modular robots benefit systems for their excellent versatility and configurability. During the research, I helped the group to improve the controller for SMORES-EP and set up the testing environment. Besides, I worked on judging the similarity between different reconfigurations (topology).
-                                          </p>
-                                        </td>
-                                      </tr>
-                  
-                  
-                  
-                      
-                  <!-- HRI !-->
-                  <tr onmouseout="learnaf_stop()" onmouseover="learnaf_start()">
-                                        <td style="padding:20px;width:25%;vertical-align:middle">
-                                          <div class="one">
-                            <!--                <div class="two" id='learnaf_image'>-->
-                            <!--                  <img src='images/learnaf_after.jpg' width="160"></div>-->
-                                            <img src='images/HRI.gif' width="210" height="210">
-                                          </div>
-                                          <script type="text/javascript">
-                                            function learnaf_start() {
-                                              document.getElementById('learnaf_image').style.opacity = "1";
-                                            }
-
-                                            function learnaf_stop() {
-                                              document.getElementById('learnaf_image').style.opacity = "0";
-                                            }
-                                            learnaf_stop()
-                                          </script>
-                                        </td>
-                                        <td style="padding:20px;width:75%;vertical-align:middle">
-                            <!--              <a href="https://arxiv.org/abs/2004.12260">-->
-                                            <papertitle>Human & Robot agents Interaction (UPenn PRECIS Lab Research)</papertitle>
-                                          </a>
-                                          <br>
-                            <!--              <a href="">Charles Herrmann</a>,-->
-                            <!--              <a href="">Richard Strong Bowen</a>,-->
-                            <!--              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,-->
-                            <!--              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,-->
-                            <!--              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,-->
-                                          <strong>Dingding Zheng</strong>,
-                                          <a href="https://obastani.github.io/">Osbert Bastani</a>
-                                          <br>
-                                          <em>Fall</em> 2019
-                                          <br>
-                  <!--                        <a href="data/maskrcnn_partb.pdf">project page</a>/-->
-
-                                          <a href="https://github.com/zddkjmuner/HRI_Social_Force/tree/master">code</a>
-                                          <p></p>
-                                          <p>In this project, we added car dynamics model into OpenAI multi-agent particle environment. Then, we implemented MPC controller to simulate the human decision making and trained robot
-                                          car (blue agents) using MADDPG algorithm. The human agents (grey ones) are simulated using "Human Social Force Model".
-                                          </p>
-                                        </td>
-                                      </tr>
-                  
-          
-          
-          
-          
-          <!-- SLAM -->
-          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  <!--bgcolor="#ffffd0"-->
-                      <td style="padding:20px;width:25%;vertical-align:middle">
-          <!--              <div class="one">-->
-          <!--                  <img src='images/lab1_gif.gif' width="180" height="260">-->
-                        <div class="one"><video width=250 height=210 muted autoplay loop>
-                            <source src='images/SLAM_V_CP_2.mp4' type="video/mp4">
-                            </video>
-                          <!--<div class="two" id='nerf_image'><video  width=150% height=150% muted autoplay loop>
-                          <source src="images/lab_1.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                          </video></div>
-                          <img src='images/lab_still.png' width="120">-->
-          <!--                <video  width=150% height=150% muted autoplay loop>-->
-          <!--                    <source src="images/lab_1.mp4" type="video/mp4">-->
-          <!--                </video>-->
-                        </div>
-                        <script type="text/javascript">
-                          function nerf_start() {
-                            document.getElementById('nerf_image').style.opacity = "1";
-                          }
-
-                          function nerf_stop() {
-                            document.getElementById('nerf_image').style.opacity = "0";
-                          }
-                          nerf_stop()
-                        </script>
-                      </td>
-                      <td style="padding:20px;width:75%;vertical-align:middle">
-                        <!--<a href="http://www.matthewtancik.com/nerf">-->
-                          <papertitle>Simultaneous Localization and Mapping (RGBD-SLAM)
-          </papertitle>
-                        </a>
-                        <br>
-                        <strong>Dingding Zheng</strong>
-          <!--              <a href="http://matthewtancik.com/">Matthew Tancik*</a>,-->
-          <!--              <strong>Jonathan T. Barron</strong>,-->
-          <!--              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,-->
-          <!--              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>-->
-                        <br>
-                  <em>Spring 2020</em>
-                        <br>
-                        <!-- <a href="data/MEAM620_proj1_1.pdf">project page</a>/
-
-                        <a href="data/MEAM620_Project1_Team11_Report.pdf">report</a>/ -->
-                        
-          <!--              <a href="https://github.com/zddkjmuner/Quadrotor-Control/blob/master/meam620-2020/proj1_1.pdf">project page</a>/-->
-          <!--              <a href="https://github.com/zddkjmuner/Quadrotor-Control/blob/master/meam620-2020/MEAM620_Project1_Team11_Report.pdf">report</a>-->
-                        <!-- <a href="https://youtu.be/W0gOJvOaMI8">video</a>
-                  /
-                        <a href="https://github.com/zddkjmuner/Quadrotor-Control">code</a> -->
-                        <p></p>
-                        <p>
-                            This project shows an approach for mapping a scene while localizing the robot using a 2D laser scan. Here we integrated the IMU orientation and odometry information from a walking humanoid robot in order to build a 2D occupancy grid map of the walls and obstacles in the environment. Then additional camera and depth imagery from a Kinect sensor were integrated to build a textured map.
-                            <br><br><br>
-                        </p>
-                      </td>
-                    </tr>
-
-          
-          <!-- Panoramic -->
-          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  <!--bgcolor="#ffffd0"-->
-            <td style="padding:20px;width:25%;vertical-align:middle">
-<!--              <div class="one">-->
-<!--                  <img src='images/lab1_gif.gif' width="180" height="260">-->
-              <div class="one"><video width=230  muted autoplay loop>
-                  <source src='images/panorama_ukf.mp4' type="video/mp4">
-                  </video>
-                <!--<div class="two" id='nerf_image'><video  width=150% height=150% muted autoplay loop>
-                <source src="images/lab_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/lab_still.png' width="120">-->
-<!--                <video  width=150% height=150% muted autoplay loop>-->
-<!--                    <source src="images/lab_1.mp4" type="video/mp4">-->
-<!--                </video>-->
-              </div>
-              <script type="text/javascript">
-                function nerf_start() {
-                  document.getElementById('nerf_image').style.opacity = "1";
-                }
-
-                function nerf_stop() {
-                  document.getElementById('nerf_image').style.opacity = "0";
-                }
-                nerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!--<a href="http://www.matthewtancik.com/nerf">-->
-                <papertitle>Orienation Tracking based Panorama Stitching
-                  using Unscented Kalman Filter
-</papertitle>
-              </a>
-              <br>
-              <strong>Dingding Zheng</strong>
-<!--              <a href="http://matthewtancik.com/">Matthew Tancik*</a>,-->
-<!--              <strong>Jonathan T. Barron</strong>,-->
-<!--              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,-->
-<!--              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>-->
-              <br>
-        <em>Spring 2020</em>
-              <br>
-              <!-- <a href="data/MEAM620_proj1_1.pdf">project page</a>/
-
-              <a href="data/MEAM620_Project1_Team11_Report.pdf">report</a>/ -->
-              
-<!--              <a href="https://github.com/zddkjmuner/Quadrotor-Control/blob/master/meam620-2020/proj1_1.pdf">project page</a>/-->
-<!--              <a href="https://github.com/zddkjmuner/Quadrotor-Control/blob/master/meam620-2020/MEAM620_Project1_Team11_Report.pdf">report</a>-->
-              <!-- <a href="https://youtu.be/W0gOJvOaMI8">video</a>
-        /
-              <a href="https://github.com/zddkjmuner/Quadrotor-Control">code</a> -->
-              <p></p>
-              <p>
-                  In this project, we implemented a kalman filter to track three dimensional orientation. Given IMU sensor readings from gyroscopes and accelerometers, we estimated the underlying 3D orientation by learning the appropriate model parameters from ground truth data given by a Vicon motion capture system. Finally, we generated real-time panoramic images from camera images using the 3D orientation filter.
               </p>
             </td>
           </tr>
 
-     
+          <!-- ICP Scan Match -->
+      
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+          <td style="padding:20px;width:30%;vertical-align:middle">
+
+            <div class="one">
+              <img src='images/scanmatch.gif' width="200" height="200">
+            </div>
+            <!-- <div class="one"><video width=260 height=260 muted autoplay loop>
+                              <source src='images/advanced_lane.mp4' type="video/mp4">
+                              </video>
+                            
+            </div> -->
+            <script type="text/javascript">
+              function nerf_start() {
+                document.getElementById('nerf_image').style.opacity = "1";
+              }
+
+              function nerf_stop() {
+                document.getElementById('nerf_image').style.opacity = "0";
+              }
+              nerf_stop()
+            </script>
+          </td>
           
-          <!-- Mask RCNN -->
-          <tr onmouseout="learnaf_stop()" onmouseover="learnaf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-<!--                <div class="two" id='learnaf_image'>-->
-<!--                  <img src='images/learnaf_after.jpg' width="160"></div>-->
-                <img src='images/mask_1.png' width="190" height="200">
-              </div>
-              <script type="text/javascript">
-                function learnaf_start() {
-                  document.getElementById('learnaf_image').style.opacity = "1";
-                }
-
-                function learnaf_stop() {
-                  document.getElementById('learnaf_image').style.opacity = "0";
-                }
-                learnaf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-<!--              <a href="https://arxiv.org/abs/2004.12260">-->
-                <papertitle>Mask RCNN (UPenn CIS 680 Vision & Learning)</papertitle>
-              </a>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <!--<a href="http://www.matthewtancik.com/nerf">-->
+              <papertitle>Iterative Close Point (ICP) Scan Match Algorithm</papertitle>
+            </a>
+            <br>
+            <strong>Archit Hardikar, Lenning Davis, Nicholas Marion</strong>,
+            <br>
+              <em>Summer 2022</em>
+            <br>
+            <p>
+              Demonstrated Point to Line Iterative Close Point scan match on occupancy grid map. 
               <br>
-<!--              <a href="">Charles Herrmann</a>,-->
-<!--              <a href="">Richard Strong Bowen</a>,-->
-<!--              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,-->
-<!--              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,-->
-<!--              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,-->
-              <strong>Dingding Zheng</strong>
-<!--              <a href="http://www.cs.cornell.edu/~rdz/index.htm">Ramin Zabih</a>-->
+              We also used Particle Filter for state estimation and map localization. Pure pursuit for locomotion inside the simulation environment.
               <br>
-              <em>Fall</em> 2019
-              <br>
-              <a href="data/maskrcnn_partb.pdf">project page</a>/
-
-              <a href="https://github.com/zddkjmuner/Mask-RCNN">code</a>
-              <p></p>
-              <p>Mask RCNN is a a conceptually simple, flexible, and general framework for object instance segmentation.It extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition. Here we implemented it to do per-pixel object detection.</p>
-            </td>
-          </tr>  
+            </p>
+          </td>
+        </tr>
 
     
-          <tr onmouseout="lighthouse_stop()" onmouseover="lighthouse_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+          <!-- Robotic Arm Manipulation -->
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+            <td style="padding:20px;width:30%;vertical-align:middle">
+  
               <div class="one">
-<!--                <div class="two" id='lh_image'><video width=100% height=100% muted autoplay loop>-->
-<!--                <source src="images/rings_crop.mp4" type="video/mp4">-->
-                <img src='images/carracingv0.gif' width="195">
-<!--                Your browser does not support the video tag.-->
-<!--                </video></div>-->
-<!--                <img src='images/rings.png' width="160">-->
+                <img src='images/meam520.PNG' width="200" height="200">
               </div>
+              <!-- <div class="one"><video width=260 height=260 muted autoplay loop>
+                                <source src='images/advanced_lane.mp4' type="video/mp4">
+                                </video>
+                              
+              </div> -->
               <script type="text/javascript">
-                function lighthouse_start() {
-                  document.getElementById('lh_image').style.opacity = "1";
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
                 }
-
-                function lighthouse_stop() {
-                  document.getElementById('lh_image').style.opacity = "0";
+  
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
                 }
-                lighthouse_stop()
+                nerf_stop()
               </script>
             </td>
+            
             <td style="padding:20px;width:75%;vertical-align:middle">
-<!--              <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">-->
-                <papertitle>OpenAI gym racing car control using "Clipped PPO" (UPenn CIS 680 Final Project)</papertitle>
+              <!--<a href="http://www.matthewtancik.com/nerf">-->
+                <papertitle>Robotic Arm Manipulation using MPC and Vision based Dynamic Obstacle interaction</papertitle>
               </a>
               <br>
-              <strong>Dingding Zheng</strong>,
-              <a href="https://www.grasp.upenn.edu/people/mengwei-zhang">Mengwei Zhang</a>,
-              <a href="https://www.linkedin.com/in/huizehuang/">Huize Huang</a>
-<!--              <p>Huize Huang</p>-->
-<!--              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>-->
+              <strong>Archit Hardikar</strong>,
               <br>
-        <em>Fall</em> 2020
+                <em>Summer 2022</em>
               <br>
-              <a href="data/CIS_680_PROJECT_REPORT.pdf">report</a>
-        /
-              <a href="https://github.com/zddkjmuner/OpenAI-Racing-Car-using-PPO">code</a>
-<!--              <a href="https://www.youtube.com/watch?v=KsiZpUFPqIU">video</a>-->
-              <p></p>
-              <p>In this project, we implemented "Clipped Proximal Policy Optimization (Clipped PPO)" algorithm and applied it in OpenAI racing-car v0.</p>
-            </td>
-          </tr>  
-
-          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-<!--                <div class="two" id='nightsight_image'><img src='images/nightsight_after.jpg'></div>-->
-                <img src='images/GAN.png' width="190">
-              </div>
-              <script type="text/javascript">
-                function nightsight_start() {
-                  document.getElementById('nightsight_image').style.opacity = "1";
-                }
-
-                function nightsight_stop() {
-                  document.getElementById('nightsight_image').style.opacity = "0";
-                }
-                nightsight_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-<!--              <a href="https://arxiv.org/abs/1910.11336">-->
-                <papertitle>GAN (UPenn CIS 680 Vision & Learning)</papertitle>
-              </a>
-              <br>
-<!--              <a href="https://sites.google.com/site/orlylibaprofessional/">Orly Liba</a>,-->
-<!--              <a href="https://scholar.google.com/citations?user=6PhlPWMAAAAJ">Kiran Murthy</a>,-->
-<!--              <a href="https://ai.google/research/people/105312/">Yun-Ta Tsai</a>,-->
-<!--              <a href="https://www.timothybrooks.com/">Timothy Brooks</a>,-->
-<!--              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,-->
-<!--              <a href="https://scholar.google.com/citations?user=qgc_jY0AAAAJ">Nikhil Karnad</a>,-->
-              <a href="https://www.linkedin.com/in/huizehuang/">Huize Huang</a>,
-              <strong>Dingding Zheng</strong>,
-              <a href="https://www.grasp.upenn.edu/people/mengwei-zhang">Mengwei Zhang</a>
-<!--              <a href="http://www.geisswerks.com/">Ryan Geiss</a>,-->
-<!--              <a href="https://people.csail.mit.edu/hasinoff/">Samuel W. Hasinoff</a>,-->
-<!--              <a href="https://scholar.google.com/citations?user=2jXxOYQAAAAJ">Yael Pritch</a>,-->
-<!--              <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>-->
-              <br>
-              <em>Fall</em> 2019
-              <br>
-              <a href="data/CIS680-HW4.pdf">project page</a>/
-              <a href="https://github.com/zddkjmuner/Generative-Models">code</a>
-              <br>
-              <p></p>
-              <p>Down-sampled the original images to get low-resolution images. Then implemented GAN to generate high-resolution images. We used MSE loss and <a href="https://github.com/richzhang/PerceptualSimilarity">Learned Perceptual Image Patch Similarity (LPIPS)</a> metric to judge the model performance.</p>
-            </td>
-          </tr>
-          
-          <tr onmouseout="font_stop()" onmouseover="font_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-<!--                <div class="two" id='font_image'><img src='images/font_after.png'></div>-->
-                <img src='images/yolo.png' width="190">
-              </div>
-              <script type="text/javascript">
-                function font_start() {
-                  document.getElementById('font_image').style.opacity = "1";
-                }
-
-                function font_stop() {
-                  document.getElementById('font_image').style.opacity = "0";
-                }
-                font_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-<!--              <a href="https://arxiv.org/abs/1910.00748">-->
-                <papertitle>YOLO (UPenn CIS 680 Vision & Learning)</papertitle>
-              </a>
-              <br>
-<!--              <a href="http://www.cs.cmu.edu/~asrivats/">Akshay Srivatsan</a>,-->
-              <strong>Dingding Zheng</strong>,
-<!--              <a href="https://people.eecs.berkeley.edu/~klein/">Dan Klein</a>,-->
-<!--              <a href="http://cseweb.ucsd.edu/~tberg/">Taylor Berg-Kirkpatrick</a>-->
-              <br>
-              <em>Fall</em> 2019
-<!--              &nbsp-->
-<!--              <font color="red"><strong>(Oral Presentation)</strong></font>-->
-              <br>
-              <p></p>
-              <p>Implemented YOLO to do object detection on street scene images.</p>
-            </td>
-          </tr>
-          
-          <!-- GMM -->
-
-          <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-            <td style="padding:30px;width:25%;vertical-align:middle">
-              <div class="one">
-<!--                <div class="two" id='dpzlearn_image'><img src='images/dpzlearn_after.jpg'></div>-->
-                <img src='images/GMM_CP.gif' width="213" height="210">
-              </div>
-              <script type="text/javascript">
-                function dpzlearn_start() {
-                  document.getElementById('dpzlearn_image').style.opacity = "1";
-                }
-
-                function dpzlearn_stop() {
-                  document.getElementById('dpzlearn_image').style.opacity = "0";
-                }
-                dpzlearn_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-<!--              <a href="https://arxiv.org/abs/1904.05822">-->
-                <papertitle>Barrel Detection using Color Segmentation based
-                  on GMMs</papertitle>
-              </a>
-              <br>
-<!--              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,-->
-<!--              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,-->
-<!--              <a href="">Sameer Ansari,</a>,-->
-              <strong>Dingding Zheng</strong>
-              <br>
-              <em>Spring</em> 2019
-<!--              &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
-              <br>
-<!--              <a href="https://github.com/google-research/google-research/tree/master/dual_pixels">code</a> /-->
-<!--              <a href="data/GargICCV2019.bib">bibtex</a>-->
-<!--              <p></p>-->
-              <p>We trained a GMM-based model to detect barrels in images and found the relative world coordinates of the barrel from images. Algorithms are implemented to learn the color model, segment the target color and finally localize the target object from images. We hand-labeled the training sets and then built a color classifier and a red barrel detector. Bounding boxes, distance to the barrels and the orientations are returned as the outputs of the model.</p>
-            </td>
-          </tr>
-          <br>
-          <br>
-
-            <!-- Pose Estimation -->
-            <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-              <td style="padding:30px;width:25%;vertical-align:middle">
-                <div class="one">
-            <!--                <div class="two" id='dpzlearn_image'><img src='images/dpzlearn_after.jpg'></div>-->
-                  <img src='images/bottle_pose.gif' width="200" height="160">
-                </div>
-                <script type="text/javascript">
-                  function dpzlearn_start() {
-                    document.getElementById('dpzlearn_image').style.opacity = "1";
-                  }
-
-                  function dpzlearn_stop() {
-                    document.getElementById('dpzlearn_image').style.opacity = "0";
-                  }
-                  dpzlearn_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-            <!--              <a href="https://arxiv.org/abs/1904.05822">-->
-                  <papertitle>6DoF Pose Estimation (UPenn CIS 580 Machine Perception)</papertitle>
-                </a>
+              <p>
                 <br>
-            <!--              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,-->
-            <!--              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,-->
-            <!--              <a href="">Sameer Ansari,</a>,-->
-                <strong>Dingding Zheng</strong>
+                Solved the pick and place task for static and dynamic blocks. Rotations and translation using Homogeneous transformations. Implemented A* and RRT algorithms for the 7-dof Franka Emika PANDA robotic manipulator arm in ROS using Python.
                 <br>
-                <em>Spring</em> 2019
-                <br>
-                <a href="data/hw6-580-2019.pdf">project page</a> /
-<!--              <a href="https://petapixel.com/2019/07/16/researchers-developed-an-ai-that-can-relight-portraits-after-the-fact/">press</a> /-->
-              <a href="https://github.com/zddkjmuner/6DoF-Pose-Estimation">code</a>
-            <!--              &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
-                <br>
-            <!--              <a href="https://github.com/google-research/google-research/tree/master/dual_pixels">code</a> /-->
-            <!--              <a href="data/GargICCV2019.bib">bibtex</a>-->
-            <!--              <p></p>-->
-                <p>
-                In this project, we were given an image of oilcan to tain a heatmap-based neural network which estimates the location of the keypoints in that image. Each 2D heatmap corresponded to one keypoint and was responsible to localize this particular keypoint in the image. During training, we synthesized the heatmaps by identifying the location of each keypoint on the 2D image and placing a 2D Gaussian centered on this location on the corresponding heatmap. Then, we used the coordinates of detected keypoints to estimate the 6DoF pose of the object.
-                </p>
-              </td>
-            </tr>
-
-
-
-          <!-- Penn logo -->
-          <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-            <td style="padding:30px;width:25%;vertical-align:middle">
-              <div class="one">
-<!--                <div class="two" id='dpzlearn_image'><img src='images/dpzlearn_after.jpg'></div>-->
-                <img src='images/logo.gif' width="200" height="160">
-              </div>
-              <script type="text/javascript">
-                function dpzlearn_start() {
-                  document.getElementById('dpzlearn_image').style.opacity = "1";
-                }
-
-                function dpzlearn_stop() {
-                  document.getElementById('dpzlearn_image').style.opacity = "0";
-                }
-                dpzlearn_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-<!--              <a href="https://arxiv.org/abs/1904.05822">-->
-                <papertitle>Logo Projection (UPenn CIS 580 Machine Perception)</papertitle>
-              </a>
-              <br>
-<!--              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,-->
-<!--              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,-->
-<!--              <a href="">Sameer Ansari,</a>,-->
-              <strong>Dingding Zheng</strong>
-              <br>
-              <em>Spring</em> 2019
-<!--              &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
-              <br>
-<!--              <a href="https://github.com/google-research/google-research/tree/master/dual_pixels">code</a> /-->
-<!--              <a href="data/GargICCV2019.bib">bibtex</a>-->
-<!--              <p></p>-->
-              <p>Estimated the homography that maps the video images onto the logo points, then warped the sampled points according to the homography. Used this correspondence to project the "Penn Engineering" logo to the goal in a football match.</p>
-            </td>
-          </tr>
-          
-          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-<!--                <div class="two" id='porlight_image'><img src='images/porlight_after.jpg'></div>-->
-                <img src='images/Dog.gif' width="220">
-              </div>
-              <script type="text/javascript">
-                function porlight_start() {
-                  document.getElementById('porlight_image').style.opacity = "1";
-                }
-
-                function porlight_stop() {
-                  document.getElementById('porlight_image').style.opacity = "0";
-                }
-                porlight_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-<!--              <a href="https://arxiv.org/abs/1905.00824">-->
-                <papertitle>Scale Invariant Detection (UPenn CIS 580 Machine Perception)</papertitle>
-              </a>
-              <br>
-<!--              <a href="http://kevinkingo.com/">Tiancheng Sun</a>,-->
-              <strong>Dingding Zheng</strong>
-<!--              <a href="https://ai.google/research/people/105312/">Yun-Ta Tsai</a>,-->
-<!--              <a href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>, Xueming Yu,-->
-<!--              <a href="http://ict.usc.edu/profile/graham-fyffe/">Graham Fyffe</a>, Christoph Rhemann, Jay Busch,-->
-<!--              <a href="https://www.pauldebevec.com/">Paul Debevec</a>,-->
-<!--              <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>-->
-              <br>
-              <em>Spring</em> 2019
-              <br>
-              <a href="data/hw5-580-2019.pdf">project page</a> /
-<!--              <a href="https://petapixel.com/2019/07/16/researchers-developed-an-ai-that-can-relight-portraits-after-the-fact/">press</a> /-->
-              <a href="https://github.com/zddkjmuner/Scale-Invariant-Detection">code</a>
-              <br>
-              <p></p>
-              <p>Approximated a Laplacian of Gaussian filter (LoG) by a Difference of Gaussians (DoG). This's a good filter for blob detection.
               </p>
             </td>
           </tr>
 
-          <tr onmouseout="loss_stop()" onmouseover="loss_start()">
-<!--              bgcolor="#ffffd0">-->
-            <td style="padding:20px;width:25%;vertical-align:middle">
+    
+          <!-- MEAM 5100 -->
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+            <td style="padding:20px;width:30%;vertical-align:middle">
+  
               <div class="one">
-<!--                <div class="two" id='loss_image'><img src='images/loss_after.png'></div>-->
-                <img src='images/acrobot.gif' width="200">
+                <img src='images/meam510.JPG' width="200" height="200">
               </div>
+              <!-- <div class="one"><video width=260 height=260 muted autoplay loop>
+                                <source src='images/advanced_lane.mp4' type="video/mp4">
+                                </video>
+                              
+              </div> -->
               <script type="text/javascript">
-                function loss_start() {
-                  document.getElementById('loss_image').style.opacity = "1";
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
                 }
-
-                function loss_stop() {
-                  document.getElementById('loss_image').style.opacity = "0";
+  
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
                 }
-                loss_stop()
+                nerf_stop()
               </script>
             </td>
+            
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>Acrobot (UPenn ESE 680 Reinforcement Learning)</papertitle>
+              <!--<a href="http://www.matthewtancik.com/nerf">-->
+                <papertitle>Autonomous Battle Robot</papertitle>
               </a>
               <br>
-              <strong>Dingding Zheng</strong>
+              <strong>Archit Hardikar</strong>
               <br>
-              <em>Fall</em> 2019
-
+                <em>Summer 2022</em>
               <br>
-              <a href="https://github.com/zddkjmuner/Acrobot">code</a>
-              <p></p>
-              <p>Implemented Actor-Critic neural network to control OpenAI gym Acrobot v1.</p>
-            </td>
-          </tr>
+              <p>
+                <br>
+                Designed and built an autonomous wall following robot. Localization using HTC Vive in C. Obstacle detection, frequency detection and wall following.
+                <br>
               </p>
             </td>
           </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
 
 
-Great thanks to Jon for his amazing <a href="https://jonbarron.info/">website template</a>!
+          <!-- END OF DOCUMENT -->
+          </td></tr></tbody></table>
+<br></br>
+
+Website adapted and creatively modified from the original <a href="https://jonbarron.info/">template</a>!
 </body>
 
 </html>

@@ -176,6 +176,7 @@
                               </video>
                             
             </div> -->
+            
             <br></br>
             <script type="text/javascript">
               function nerf_start() {
@@ -197,7 +198,11 @@
             <!-- <strong>Archit Hardikar, Lenning Davis, Nicholas Marion</strong>, -->
             <br>
               <em>Spring 2022</em>
-            <br>
+              <br>
+              <!-- <br> -->
+              <!-- Code: &nbsp <a href="https://github.com/architnh/arm_mpc" target="_blank" style="color :rgb(0, 0, 0); "><i class="fa fa-github   fa-1x right " aria-hidden="true"></i></a>  -->
+              <br>
+              YouTube: &nbsp  <a href="https://www.youtube.com/watch?v=NJYva23jas4">ICP</a>, &nbsp  <a href="https://www.youtube.com/watch?v=lJDvPGl10NQ">Hector SLAM</a>
             <p>
               Demonstrated Point to Line Iterative Close Point scan match on occupancy grid map. 
               <br>
@@ -303,7 +308,52 @@
           </tr>
 
 
-                    
+          <!-- 3D Visualizing -->
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+            <td style="padding:20px;width:30%;vertical-align:middle">
+  
+              <!-- <div class="one">
+                <img src='images/ipm.png' width="200" height="200">
+              </div> -->
+              <div class="one"><video width=200 height=200 muted autoplay loop>
+                                  <source src='images/3dviz.mp4' type="video/mp4">
+                                </video>            
+              </div>
+              <br></br>
+              <script type="text/javascript">
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
+                }
+  
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
+                }
+                nerf_stop()
+              </script>
+            </td>
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!--<a href="http://www.matthewtancik.com/nerf">-->
+                <papertitle>3D Object Visualization</papertitle>
+              </a>
+              <!-- <br> -->
+              <!-- <strong>Archit Hardikar</strong>, -->
+              <br>
+                <em>Spring 2023</em>
+              <br>              
+              <br>
+              <!-- Code: &nbsp <a href="https://github.com/architnh/inverse_perspective_mapping_f1tenth" target="_blank" style="color :rgb(0, 0, 0); "><i class="fa fa-github   fa-1x right " aria-hidden="true"></i></a>  -->
+              <br>
+              <!-- Report: &nbsp  <a href="https://github.com/architnh/inverse_perspective_mapping_f1tenth/blob/main/ESE_615_Final_Report.pdf">Link</a> -->
+              <p>
+                <!-- This project was aimed at combining our previous efforts for dynamic obstacle avoidance using spline-based RRT* approch with a vision system for path planning. We integrated an inverse perspective mapping pipeline for opponent vehicle state estimation and path planning approaches. The image shown to the left shows the accuracy of the generated IPM by overlaying the LIDAR scan onto the image. -->
+                This project was aimed at using 2D graphics to create a basic 
+                <br>
+              </p>
+            </td>
+          </tr>
+          
+
           <!-- Path Planning Methods -->
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
             <td style="padding:20px;width:30%;vertical-align:middle">

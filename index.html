@@ -308,6 +308,51 @@
           </tr>
 
 
+          <!-- OSC Planar Biped MEAM 517 -->
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+            <td style="padding:20px;width:30%;vertical-align:middle">
+  
+              <!-- <div class="one">
+                <img src='images/ipm.png' width="200" height="200">
+              </div> -->
+              <div class="one"><video width=200 height=200 muted autoplay loop>
+                                  <source src='images/OSC_walking.mp4' type="video/mp4">
+                                </video>            
+              </div>
+              <br></br>
+              <script type="text/javascript">
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
+                }
+  
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
+                }
+                nerf_stop()
+              </script>
+            </td>
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!--<a href="http://www.matthewtancik.com/nerf">-->
+                <papertitle>Operational Space Controller for Planar Biped</papertitle>
+              </a>
+              <!-- <br> -->
+              <!-- <strong>Archit Hardikar</strong>, -->
+              <br>
+                <em>Spring 2023</em>
+              <br>              
+              <!-- <br> -->
+              <!-- Code: &nbsp <a href="https://github.com/architnh/inverse_perspective_mapping_f1tenth" target="_blank" style="color :rgb(0, 0, 0); "><i class="fa fa-github   fa-1x right " aria-hidden="true"></i></a>  -->
+              <!-- <br> -->
+              <!-- Video: &nbsp  <a href="https://youtu.be/J32xKW-mLgY">YouTube</a> -->
+              <p>
+                This project was aimed at exploring the concepts of Operational Space Controller and controling a Planar Biped robot in Pydrake using the Meshcat environment. The tracking objectives of the OSC were the center of mass, torso angle, and
+                swing foot position in order to achieve stable walking. In order to keep the torso upright, its angle (theta) made with the normal to the ground was controlled to be 0.
+                <br>
+              </p>
+            </td>
+          </tr>
+
           <!-- 3D Visualizing -->
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
             <td style="padding:20px;width:30%;vertical-align:middle">

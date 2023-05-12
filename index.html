@@ -159,6 +159,103 @@
             </td>
           </tr>
 
+           
+          
+          <!-- Robotic Arm Manipulation -->
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              
+              <!-- <div class="one">
+                <img src='images/meam520.png' width="200" height="200">
+              </div> -->
+              <div class="one"><video width=200 height=200 muted autoplay loop>
+                <!-- <source src='images/speed_test_map_1.mkv' type="video/mp4"> -->
+                <source src='images/arm_mpc1x1.mp4' type="video/mp4">
+              </video>            
+            </div>
+            <br></br>
+            <script type="text/javascript">
+              function nerf_start() {
+                document.getElementById('nerf_image').style.opacity = "1";
+              }
+              
+              function nerf_stop() {
+                document.getElementById('nerf_image').style.opacity = "0";
+              }
+              nerf_stop()
+              </script>
+            </td>
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!--<a href="http://www.matthewtancik.com/nerf">-->
+                <papertitle>Robotic Arm Manipulation using MPC and Vision based Dynamic Obstacle interaction</papertitle>
+              </a>
+              <!-- <br> -->
+              <!-- <strong>Archit Hardikar</strong>, -->
+              <br>
+              <em>Fall 2022</em>
+              <!-- <br> -->
+              <br>
+              <br>
+              Code: &nbsp <a href="https://github.com/architnh/arm_mpc" target="_blank" style="color :rgb(0, 0, 0); "><i class="fa fa-github   fa-1x right " aria-hidden="true"></i></a> 
+              <br>
+              Report: &nbsp  <a href="https://github.com/architnh/arm_mpc/blob/master/MEAM_517_Project_Report.pdf">Link</a>
+              <p>
+                For the first stage of the project, we solved the pick and place task for static and dynamic cubes. We created mechanical mounts for mounting usb_cam on the Robotic Arm, and developed a simulator to simulate Apriltag transformations to mimic the real world. The, by using Apriltags mounted on the cubes, we created ROS node to create transformations and inverse kinematics that would help the robot plan a path to pick up the cubes, and stack them to create a tower. Implemented A*, Rapidly Exploring Random Trees (RRT) and Potential Fields algorithms for the 7-dof Franka Emika PANDA robotic manipulator arm in ROS using Python.
+                <br>
+                For the second part, we implemented a 10 step finite horizon Model Predictive Control (MPC) with goal point as the waypoints given by the RRT algorithm.
+                <br>
+                For the third part, we implemented a Heirarchical MPC Algorithm, where second stage MPC optimized the path given by RRT, returning a better path with lower cost.                <br>
+              </p>
+            </td>
+          </tr>
+          
+
+          <!-- MEAM 620 Planning for Quadrotor -->
+
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+            <td style="padding:20px;width:30%;vertical-align:middle">
+
+              <div class="one"><video width=200 height=200 muted autoplay loop>
+                  <source src='images/minsnap.mp4' type="video/mp4">
+                  </video>
+              </div>
+              <br></br>
+              <!-- <div class="one"><video width=260 height=260 muted autoplay loop>
+                                <source src='images/advanced_lane.mp4' type="video/mp4">
+                                </video>
+                              
+              </div> -->
+              <script type="text/javascript">
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
+                }
+
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
+                }
+                nerf_stop()
+              </script>
+            </td>
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!--<a href="http://www.matthewtancik.com/nerf">-->
+                <papertitle>Motion Planning and State Estimation for Quadrotors</papertitle>
+              </a>
+              <!-- <br> -->
+              <!-- <strong>Archit Hardikar, Lenning Davis, Nicholas Marion, Ruchi Gupte</strong>, -->
+              <br>
+              <em>Spring 2023</em>
+              <br>
+              <!-- <a href="https://www.linkedin.com/in/reach-archit/">LinkedIn</a> -->
+              <p>
+              Implementated non-linear geometric controller for quadrotors based on <a href="https://ieeexplore.ieee.org/document/5980409">research</a> by D. Mellinger et al. Implemented Error-State Kalman filter for state estimation. The collision free path is obtained by A* algorithm, and sparsely sampled by Ramer-Douglas-Pecker algorithm, after which a Snap minimizing trajectory is generated for optimal quadrotor flight. 
+              <br>
+              </p>
+            </td>
+          </tr>
+
+
           <!-- Advanced Perception YOLO -->
 
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
@@ -208,59 +305,7 @@
               </p>
             </td>
           </tr>
-
-
-    
-          <!-- Robotic Arm Manipulation -->
-          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
-            <td style="padding:20px;width:30%;vertical-align:middle">
-  
-              <!-- <div class="one">
-                <img src='images/meam520.png' width="200" height="200">
-              </div> -->
-              <div class="one"><video width=200 height=200 muted autoplay loop>
-                                <!-- <source src='images/speed_test_map_1.mkv' type="video/mp4"> -->
-                                 <source src='images/arm_mpc1x1.mp4' type="video/mp4">
-                                </video>            
-              </div>
-              <br></br>
-              <script type="text/javascript">
-                function nerf_start() {
-                  document.getElementById('nerf_image').style.opacity = "1";
-                }
-  
-                function nerf_stop() {
-                  document.getElementById('nerf_image').style.opacity = "0";
-                }
-                nerf_stop()
-              </script>
-            </td>
-            
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <!--<a href="http://www.matthewtancik.com/nerf">-->
-                <papertitle>Robotic Arm Manipulation using MPC and Vision based Dynamic Obstacle interaction</papertitle>
-              </a>
-              <!-- <br> -->
-              <!-- <strong>Archit Hardikar</strong>, -->
-              <br>
-                <em>Fall 2022</em>
-              <!-- <br> -->
-              <br>
-              <br>
-              Code: &nbsp <a href="https://github.com/architnh/arm_mpc" target="_blank" style="color :rgb(0, 0, 0); "><i class="fa fa-github   fa-1x right " aria-hidden="true"></i></a> 
-              <br>
-              Report: &nbsp  <a href="https://github.com/architnh/arm_mpc/blob/master/MEAM_517_Project_Report.pdf">Link</a>
-              <p>
-                For the first stage of the project, we solved the pick and place task for static and dynamic cubes. We created mechanical mounts for mounting usb_cam on the Robotic Arm, and developed a simulator to simulate Apriltag transformations to mimic the real world. The, by using Apriltags mounted on the cubes, we created ROS node to create transformations and inverse kinematics that would help the robot plan a path to pick up the cubes, and stack them to create a tower. Implemented A*, Rapidly Exploring Random Trees (RRT) and Potential Fields algorithms for the 7-dof Franka Emika PANDA robotic manipulator arm in ROS using Python.
-                <br>
-                For the second part, we implemented a 10 step finite horizon Model Predictive Control (MPC) with goal point as the waypoints given by the RRT algorithm.
-                <br>
-                For the third part, we implemented a Heirarchical MPC Algorithm, where second stage MPC optimized the path given by RRT, returning a better path with lower cost.                <br>
-              </p>
-            </td>
-          </tr>
-
-
+          
           <!-- Path Planning using IPM for f1tenth -->
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
             <td style="padding:20px;width:30%;vertical-align:middle">

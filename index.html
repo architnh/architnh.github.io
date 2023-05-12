@@ -115,6 +115,50 @@
             </td>
           </tr>
 
+          <!-- NERF -->
+
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+            <td style="padding:20px;width:30%;vertical-align:middle">
+
+              <div class="one"><video width=200 height=200 muted autoplay loop>
+                  <source src='images/nerf_render.mp4' type="video/mp4">
+                  </video>
+              </div>
+              <br></br>
+              <!-- <div class="one"><video width=260 height=260 muted autoplay loop>
+                                <source src='images/advanced_lane.mp4' type="video/mp4">
+                                </video>
+                              
+              </div> -->
+              <script type="text/javascript">
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
+                }
+
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
+                }
+                nerf_stop()
+              </script>
+            </td>
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!--<a href="http://www.matthewtancik.com/nerf">-->
+                <papertitle>NeRF: Neural Radiance Field in 3D Vision</papertitle>
+              </a>
+              <!-- <br> -->
+              <!-- <strong>Archit Hardikar, Lenning Davis, Nicholas Marion, Ruchi Gupte</strong>, -->
+              <br>
+              <em>Spring 2023</em>
+              <br>
+              <!-- <a href="https://www.linkedin.com/in/reach-archit/">LinkedIn</a> -->
+              <p>
+              In this project I implemented Neural Radiance Fields to render a 3D model of a lego model. The implementation is based on the original research <a href="https://arxiv.org/abs/2210.00379">article</a> by K. Gao et al.  
+              <br>
+              </p>
+            </td>
+          </tr>
+
           <!-- Advanced Perception YOLO -->
 
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  

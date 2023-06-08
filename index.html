@@ -244,7 +244,7 @@
               <br>
               <!-- <a href="https://www.linkedin.com/in/reach-archit/">LinkedIn</a> -->
               <p>
-              Implementated non-linear geometric controller for quadrotors based on <a href="https://ieeexplore.ieee.org/document/5980409">research</a> by D. Mellinger et al. Implemented Error-State Kalman filter for state estimation. The collision free path is obtained by A* algorithm, and sparsely sampled by Ramer-Douglas-Pecker algorithm, after which a Snap minimizing trajectory is generated for optimal quadrotor flight. 
+              Implementated non-linear geometric controller for quadrotors based on <a href="https://ieeexplore.ieee.org/document/5980409">research</a> by D. Mellinger et al. Implemented Error-State Kalman filter for estimating the pose and orientation of the quadcopter based on inputs from stereo cameras and the IMU. The collision free path is obtained by A* algorithm, and sparsely sampled by Ramer-Douglas-Pecker algorithm, after which a Snap minimizing trajectory is generated for generating optimal quadrotor flight control commands. 
               <br>
               </p>
             </td>
@@ -374,9 +374,9 @@
                 <br>
                 YouTube: &nbsp  <a href="https://www.youtube.com/watch?v=NJYva23jas4">ICP</a>, &nbsp  <a href="https://www.youtube.com/watch?v=lJDvPGl10NQ">Hector SLAM</a>
               <p>
-                Demonstrated Point to Line Iterative Close Point scan match on occupancy grid map. 
+                Demonstrated Point to Line Iterative Close Point scan match on occupancy grid map based on the Andrea Censi's <a href="https://www.researchgate.net/publication/4341089_An_ICP_variant_using_a_point-to-line_metric">publication</a>. 
                 <br>
-                We also used Particle Filter for state estimation and map localization. Pure pursuit for locomotion inside the simulation environment.
+                Used a Particle Filter for state estimation, Hector SLAM for map localization and Pure Pursuit control.
                 <br>
               </p>
             </td>
@@ -418,7 +418,7 @@
               <!-- <br> -->
               <!-- Video: &nbsp  <a href="https://youtu.be/J32xKW-mLgY">YouTube</a> -->
               <p>
-                This project was aimed at exploring the concepts of Operational Space Controller and controling a Planar Biped robot in Pydrake using the Meshcat environment. The tracking objectives of the OSC were the center of mass, torso angle, and
+                Implemented an Operational Space Controller for controling a Planar Biped robot in Pydrake using the Meshcat environment. The tracking objectives of the OSC were the center of mass, torso angle, and
                 swing foot position in order to achieve stable walking. In order to keep the torso upright, its angle (theta) made with the normal to the ground was controlled to be 0.
                 <br>
               </p>

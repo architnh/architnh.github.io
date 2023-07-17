@@ -254,6 +254,47 @@
           </tr>
 
 
+          <!-- f1tenth mpc -->
+
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  
+            <td style="padding:20px;width:30%;vertical-align:middle">
+
+              <div class="one"><video width=200 height=200 muted autoplay loop>
+                  <source src='images/mpc_sim.mp4' type="video/mp4">
+                  </video>
+              </div>
+              <br></br>
+
+              <script type="text/javascript">
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
+                }
+
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
+                }
+                nerf_stop()
+              </script>
+            </td>
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!--<a href="">-->
+                <papertitle>Model Predictive Control for autonomous racing</papertitle>
+              </a>
+              <!-- <br> -->
+              <!-- <strong>Archit Hardikar, Lenning Davis, Nicholas Marion, Ruchi Gupte</strong>, -->
+              <br>
+              <em>Summer 2023</em>
+              <br>
+              Code: &nbsp <a href="https://github.com/architnh/f1tenth_mpc" target="_blank" style="color :rgb(0, 0, 0); "><i class="fa fa-github   fa-1x right " aria-hidden="true"></i></a> 
+              <p>
+              Implementated linear model predictive controller for autonomous racing car using f1tenth simulator using ROS2. 
+              <br>
+              </p>
+            </td>
+          </tr>
+
+
           <!-- Advanced Perception YOLO -->
 
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">  

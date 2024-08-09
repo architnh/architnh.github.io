@@ -129,3 +129,26 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.fa-github:hover{
+  color:rgb(37, 128, 232) !important;
+}
+
+.fa-linkedin:hover{
+  color:rgb(37, 128, 232) !important;
+}
+
+.fa-file:hover{
+  color:rgb(37, 128, 232) !important;
+  /* font-size:3em !important; */
+  /* transition: 1s ease-out  */
+}
+
+
+.fa-envelope:hover{
+  color:rgb(37, 128, 232) !important;
+}
+
+.fa-google-scholar:hover{
+  color:rgb(37, 128, 232) !important;
+}
